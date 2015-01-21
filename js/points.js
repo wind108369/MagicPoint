@@ -2,15 +2,10 @@
 
     'use strict';
 
-    function $(id) {
-        return document.getElementById(id);
-    }
-
-    var canvas = $('canvas');
+    var canvas = document.getElementById('canvas');
     var ctx = canvas.getContext('2d');
     var width = window.innerWidth;
     var height = window.innerHeight;
-
 
     var POINTERS = 200000;
     var STEP = 10;
